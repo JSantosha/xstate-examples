@@ -49,10 +49,6 @@ function App() {
   const [current, send] = useMachine(tahoeTravelMachine);
   const currentState = current.value;
 
-  console.log(
-    current.configuration[0].machine.config.states[currentState].on
-  );
-
   const methods = current.configuration[0].machine.config.states[
     currentState
   ].on
